@@ -1,17 +1,66 @@
+$primary: #fff;
+$secondary: #aaa;
+$tertiary: #777;
+$accent: hotpink;
+$bg: #444;
+$bg-a: #333;
+$bs: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+
+@mixin showAnimation() {
+  animation: show 200ms cubic-bezier(0, 0, 0.2, 1) forwards;
+
+  @keyframes show {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
+
+#vimiumHintMarkerContainer div {
+  &.internalVimiumHintMarker,
+  &.vimiumHintMarker {
+    padding: 3px 4px;
+    background: $bg;
+    border: none;
+    box-shadow: $bs;
+  }
+
+  span {
+    color: $primary;
+    text-shadow: none;
+  }
+
+  > .matchingCharacter {
+    opacity: 0.4;
+
+    ~ span {
+      color: $accent;
+    }
+  }
+}
+
 #vomnibar {
-  background: #444;
+  background: $bg;
   border: none;
+  box-shadow: $bs;
+
+  @include showAnimation();
 
   .vomnibarSearchArea,
   input {
-    color: #fff;
+    color: $primary;
     background: transparent;
     border: none;
   }
 
   .vomnibarSearchArea {
     padding: 10px 30px;
-    border-bottom: 1px solid #333;
   }
 
   input {
@@ -20,42 +69,63 @@
 
   ul {
     padding: 0;
-    background: #444;
+    background: $bg;
+    border-top: 1px solid $bg-a;
   }
 
   li {
     padding: 10px;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid $bg-a;
 
     .vomnibarTopHalf,
     .vomnibarBottomHalf {
       padding: 3px 0;
     }
 
-    .vomnibarSauce {
-      color: #aaa;
+    .vomnibarSource {
+      color: $secondary;
     }
 
     em,
     .vomnibarTitle {
-      color: #aaa;
+      color: $secondary;
     }
 
     .vomnibarUrl {
-      color: #222;
+      color: $tertiary;
     }
 
     .vomnibarMatch {
-      color: #777;
+      color: $accent;
       font-weight: normal;
     }
 
     .vomnibarTitle .vomnibarMatch {
-      color: #fff;
+      color: $accent;
     }
 
     &.vomnibarSelected {
-      background-color: #333;
+      background-color: $bg-a;
     }
+  }
+}
+
+div.vimiumHUD {
+  background: $bg;
+  border: none;
+  box-shadow: $bs;
+
+  span#hud-find-input,
+  .vimiumHUDSearchAreaInner {
+    color: $primary;
+  }
+
+  .hud-find {
+    background-color: transparent;
+    border: none;
+  }
+
+  .vimiumHUDSearchArea {
+    background-color: transparent;
   }
 }
