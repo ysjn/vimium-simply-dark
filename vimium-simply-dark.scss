@@ -35,20 +35,25 @@
     .vomnibarSauce {
       color: #aaa;
     }
+
     em,
     .vomnibarTitle {
       color: #aaa;
     }
+
     .vomnibarUrl {
       color: #222;
     }
-    .vomnibarTitle .vomnibarMatch {
-      color: #fff;
-    }
+
     .vomnibarMatch {
       color: #777;
       font-weight: normal;
     }
+
+    .vomnibarTitle .vomnibarMatch {
+      color: #fff;
+    }
+
     &.vomnibarSelected {
       background-color: #333;
     }
