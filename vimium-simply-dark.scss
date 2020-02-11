@@ -1,31 +1,12 @@
-div {
-  > .vimiumHintMarker {
-    background: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      color-stop(0%, #fff785),
-      color-stop(100%, #ffc542)
-    );
-    border: 1px solid #e3be23;
-
-    span {
-      color: black;
-      font-weight: bold;
-      font-size: 12px;
-    }
-  }
-}
-
 #vomnibar {
   background: #444;
   border: none;
 
   .vomnibarSearchArea,
   input {
+    color: #fff;
     background: transparent;
     border: none;
-    color: #fff;
   }
 
   .vomnibarSearchArea {
