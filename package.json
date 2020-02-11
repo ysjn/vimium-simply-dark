@@ -12,6 +12,6 @@
   },
   "scripts": {
     "dev": "node-sass *.scss -o . --output-style expanded -w",
-    "build": "node-sass *.scss -o . --output-style compressed"
+    "build": "node-sass *.scss -o . --output-style expanded"
   }
 }
