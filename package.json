@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "prettier": "^1.19.1",
     "stylelint": "^13.1.0",
     "stylelint-config-prettier": "^8.0.1",
