@@ -19,6 +19,6 @@ Dark theme for [vimium chrome extension](https://github.com/philc/vimium).
 
 ### Installation
 
-Copy and paste the vimium-simply-dark.css in Vimium settings.
+Copy and paste the [vimium-simply-dark.css](https://github.com/ysjn/vimium-simply-dark/blob/master/vimium-simply-dark.css) in Vimium settings.
 
-<img src="https://user-images.githubusercontent.com/6050882/91941872-ec7e3d80-ed34-11ea-8e03-4da187503e3c.png" width="725" />
+<img src="https://raw.githubusercontent.com/ysjn/vimium-simply-dark/master/captures/installation.png" width="725" />
