@@ -112,8 +112,34 @@ div.vimiumHUD {
   border: none;
   box-shadow: var(--box-shadow);
 
+  .hud-find {
+    display: flex;
+  }
+
   span#hud-find-input {
+    position: relative;
+    width: 100%;
     color: var(--primary);
+
+    &::before {
+      position: sticky;
+      left: 0;
+      padding-right: 4px;
+      color: var(--secondary);
+      background:
+        linear-gradient(
+          90deg,
+          var(--background) 0%,
+          var(--background) 50%,
+          transparent 100%
+        );
+    }
+  }
+
+  #hud-match-count {
+    flex-shrink: 0;
+    float: none;
+    padding-left: 4px;
   }
 
   .hud-find,
