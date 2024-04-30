@@ -1,11 +1,14 @@
 :root {
+  /** Customizable Palette */
   --accent: hotpink;
-  --text-primary: #fff;
-  --text-secondary: #aaa;
-  --text-tertiary: #777;
-  --background-primary: #444;
-  --background-selected: #333;
-  --border-primary: #333;
+  --text: #fff;
+  --background: #444;
+
+  /** Calcurated Palette */
+  --text-secondary: color-mix(in srgb, var(--text) 60%, transparent);
+  --text-tertiary: color-mix(in srgb, var(--text) 35%, transparent);
+  --background-selected: color-mix(in srgb, var(--background), #000 25%);
+  --border-primary: var(--background-selected);
   --box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
 }
 
@@ -24,13 +27,13 @@
 #vimiumHintMarkerContainer {
   .internalVimiumHintMarker {
     padding: 3px 4px;
-    background: var(--background-primary);
+    background: var(--background);
     border: none;
     box-shadow: var(--box-shadow);
   }
 
   span {
-    color: var(--text-primary);
+    color: var(--text);
     text-shadow: none;
   }
 
@@ -44,27 +47,29 @@
 }
 
 #vomnibar {
-  background: var(--background-primary);
+  background: var(--background);
   border: none;
   box-shadow: var(--box-shadow);
   animation: show 200ms cubic-bezier(0, 0, 0.2, 1) forwards;
 
   .vomnibarSearchArea {
     padding: 10px 30px;
-    color: var(--text-primary);
+    color: var(--text);
     background: transparent;
     border: none;
   }
 
   #vomnibarInput {
     padding: 0;
+    color: var(--text);
     background: transparent;
+    box-shadow: none;
   }
 
   ul {
     margin: 0;
     padding: 0;
-    background: var(--background-primary);
+    background: transparent;
     border-top: 1px solid var(--border-primary);
   }
 
@@ -106,7 +111,7 @@
 }
 
 div.vimiumHUD {
-  background: var(--background-primary);
+  background: var(--background);
   border: none;
   box-shadow: var(--box-shadow);
 
@@ -117,7 +122,7 @@ div.vimiumHUD {
   span#hud-find-input {
     position: relative;
     width: 100%;
-    color: var(--text-primary);
+    color: var(--text);
 
     &::before {
       position: sticky;
@@ -126,8 +131,8 @@ div.vimiumHUD {
       color: var(--text-secondary);
       background: linear-gradient(
         90deg,
-        var(--background-primary) 0%,
-        var(--background-primary) 50%,
+        var(--background) 0%,
+        var(--background) 50%,
         transparent 100%
       );
     }
