@@ -1,14 +1,9 @@
 {
   "devDependencies": {
-    "prettier": "^1.19.1",
-    "sass": "^1.75.0",
-    "stylelint": "^13.1.0",
-    "stylelint-config-prettier": "^8.0.1",
+    "stylelint": "^16.4.0",
     "stylelint-config-rational-order": "^0.1.2",
-    "stylelint-config-standard": "^20.0.0",
-    "stylelint-order": "^4.0.0",
-    "stylelint-prettier": "^1.1.2",
-    "stylelint-scss": "^3.14.2"
+    "stylelint-config-standard": "^36.0.0",
+    "stylelint-order": "^6.0.4"
   },
   "scripts": {
     "lint": "npx stylelint *.css --fix"
