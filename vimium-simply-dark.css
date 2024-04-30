@@ -76,13 +76,20 @@
       padding: 3px 0;
     }
 
+    .vomnibarBottomHalf {
+      display: flex;
+    }
+
     .vomnibarTitle,
     .vomnibarSource {
       color: var(--secondary);
     }
 
     .vomnibarUrl {
+      overflow: hidden;
       color: var(--tertiary);
+      white-space: nowrap;
+      text-overflow: ellipsis;
     }
 
     .vomnibarMatch {
