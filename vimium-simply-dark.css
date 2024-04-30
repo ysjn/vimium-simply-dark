@@ -73,11 +73,8 @@
 
     .vomnibarTopHalf,
     .vomnibarBottomHalf {
-      padding: 3px 0;
-    }
-
-    .vomnibarBottomHalf {
       display: flex;
+      padding: 3px 0;
     }
 
     .vomnibarTitle,
