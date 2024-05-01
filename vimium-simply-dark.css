@@ -1,10 +1,14 @@
 :root {
+  /** Customizable Palette */
   --accent: hotpink;
-  --primary: #fff;
-  --secondary: #aaa;
-  --tertiary: #777;
+  --text: #fff;
   --background: #444;
-  --background-secondary: #333;
+
+  /** Calcurated Palette */
+  --text-secondary: color-mix(in srgb, var(--text) 60%, transparent);
+  --text-tertiary: color-mix(in srgb, var(--text) 35%, transparent);
+  --background-selected: color-mix(in srgb, var(--background), #000 20%);
+  --border-primary: var(--background-selected);
   --box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
 }
 
@@ -29,7 +33,7 @@
   }
 
   span {
-    color: var(--primary);
+    color: var(--text);
     text-shadow: none;
   }
 
@@ -50,26 +54,28 @@
 
   .vomnibarSearchArea {
     padding: 10px 30px;
-    color: var(--primary);
+    color: var(--text);
     background: transparent;
     border: none;
   }
 
   #vomnibarInput {
     padding: 0;
+    color: var(--text);
     background: transparent;
+    box-shadow: none;
   }
 
   ul {
     margin: 0;
     padding: 0;
-    background: var(--background);
-    border-top: 1px solid var(--background-secondary);
+    background: transparent;
+    border-top: 1px solid var(--border-primary);
   }
 
   li {
     padding: 10px;
-    border-bottom: 1px solid var(--background-secondary);
+    border-bottom: 1px solid var(--border-primary);
 
     .vomnibarTopHalf,
     .vomnibarBottomHalf {
@@ -79,12 +85,12 @@
 
     .vomnibarTitle,
     .vomnibarSource {
-      color: var(--secondary);
+      color: var(--text-secondary);
     }
 
     .vomnibarUrl {
       overflow: hidden;
-      color: var(--tertiary);
+      color: var(--text-tertiary);
       white-space: nowrap;
       text-overflow: ellipsis;
     }
@@ -99,7 +105,8 @@
     }
 
     &.vomnibarSelected {
-      background-color: var(--background-secondary);
+      background-color: var(--background-selected);
+      border-bottom: 1px solid transparent;
     }
   }
 }
@@ -116,13 +123,13 @@ div.vimiumHUD {
   span#hud-find-input {
     position: relative;
     width: 100%;
-    color: var(--primary);
+    color: var(--text);
 
     &::before {
       position: sticky;
       left: 0;
       padding-right: 4px;
-      color: var(--secondary);
+      color: var(--text-secondary);
       background: linear-gradient(
         90deg,
         var(--background) 0%,
