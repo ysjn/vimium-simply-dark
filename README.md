@@ -27,7 +27,7 @@ Copy and paste the [vimium-simply-dark.css](https://github.com/ysjn/vimium-simpl
 
 You can customize the colors to your liking by changing the variables specified under `/** Customizable Palette */`.
 
-#### Sample - Changing the accent color
+#### Changing the accent color
 
 ```css
 /** Customizable Palette */
@@ -38,7 +38,7 @@ You can customize the colors to your liking by changing the variables specified 
 
 <img src="https://raw.githubusercontent.com/ysjn/vimium-simply-dark/master/captures/customize_accent.png" width="725" />
 
-#### Sample - Making it darker
+#### Making it darker
 
 ```css
 /** Customizable Palette */
@@ -49,7 +49,7 @@ You can customize the colors to your liking by changing the variables specified 
 
 <img src="https://raw.githubusercontent.com/ysjn/vimium-simply-dark/master/captures/customize_darken.png" width="725" />
 
-#### Sample - Transparency
+#### Transparency
 
 ```css
 /** Customizable Palette */
@@ -60,7 +60,7 @@ You can customize the colors to your liking by changing the variables specified 
 
 <img src="https://raw.githubusercontent.com/ysjn/vimium-simply-dark/master/captures/customize_transparency.png" width="725" />
 
-#### Sample - Fancy
+#### Fancy
 
 ```css
 /** Customizable Palette */
