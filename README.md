@@ -25,16 +25,15 @@ Copy and paste the [vimium-simply-dark.css](https://github.com/ysjn/vimium-simpl
 
 ### Customization
 
-You can customize colors based on your preference by changing variables specified under `/** Customizable Palette */`.
+You can customize the colors to your liking by changing the variables specified under `/** Customizable Palette */`.
 
 #### Sample - Changing the accent color
 
 ```css
-:root {
-  /** Customizable Palette */
-  --accent: yellow;
-  --text: #fff;
-  --background: #444;
+/** Customizable Palette */
+--accent: yellow;
+--text: #fff;
+--background: #444;
 ```
 
 <img src="https://raw.githubusercontent.com/ysjn/vimium-simply-dark/master/captures/customize_accent.png" width="725" />
@@ -42,11 +41,10 @@ You can customize colors based on your preference by changing variables specifie
 #### Sample - Making it darker
 
 ```css
-:root {
-  /** Customizable Palette */
-  --accent: hotpink;
-  --text: #fff;
-  --background: #111;
+/** Customizable Palette */
+--accent: hotpink;
+--text: #fff;
+--background: #111;
 ```
 
 <img src="https://raw.githubusercontent.com/ysjn/vimium-simply-dark/master/captures/customize_darken.png" width="725" />
@@ -54,11 +52,10 @@ You can customize colors based on your preference by changing variables specifie
 #### Sample - Transparency
 
 ```css
-:root {
-  /** Customizable Palette */
-  --accent: hotpink;
-  --text: #fff;
-  --background: rgb(30 30 30 / 90%);
+/** Customizable Palette */
+--accent: hotpink;
+--text: #fff;
+--background: rgb(30 30 30 / 90%);
 ```
 
 <img src="https://raw.githubusercontent.com/ysjn/vimium-simply-dark/master/captures/customize_transparency.png" width="725" />
@@ -66,11 +63,10 @@ You can customize colors based on your preference by changing variables specifie
 #### Sample - Fancy
 
 ```css
-:root {
-  /** Customizable Palette */
-  --accent: mediumorchid;
-  --text: blue;
-  --background: pink;
+/** Customizable Palette */
+--accent: mediumorchid;
+--text: blue;
+--background: pink;
 ```
 
 <img src="https://raw.githubusercontent.com/ysjn/vimium-simply-dark/master/captures/customize_fancy.png" width="725" />
