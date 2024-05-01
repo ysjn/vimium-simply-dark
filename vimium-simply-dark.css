@@ -7,7 +7,7 @@
   /** Calcurated Palette */
   --text-secondary: color-mix(in srgb, var(--text) 60%, transparent);
   --text-tertiary: color-mix(in srgb, var(--text) 35%, transparent);
-  --background-selected: color-mix(in srgb, var(--background), #000 25%);
+  --background-selected: color-mix(in srgb, var(--background), #000 20%);
   --border-primary: var(--background-selected);
   --box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
 }
@@ -106,6 +106,7 @@
 
     &.vomnibarSelected {
       background-color: var(--background-selected);
+      border-bottom: 1px solid transparent;
     }
   }
 }
