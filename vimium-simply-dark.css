@@ -1,15 +1,15 @@
 :root {
   /** Customizable Palette */
-  --accent: hotpink;
-  --text: #fff;
-  --background: #444;
+  --vimium-accent: hotpink;
+  --vimium-text: #fff;
+  --vimium-background: #444;
 
   /** Calcurated Palette */
-  --text-secondary: color-mix(in srgb, var(--text) 60%, transparent);
-  --text-tertiary: color-mix(in srgb, var(--text) 35%, transparent);
-  --background-selected: color-mix(in srgb, var(--background), #000 20%);
-  --border-primary: var(--background-selected);
-  --box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+  --vimium-text-secondary: color-mix(in srgb, var(--vimium-text) 60%, transparent);
+  --vimium-text-tertiary: color-mix(in srgb, var(--vimium-text) 35%, transparent);
+  --vimium-background-selected: color-mix(in srgb, var(--vimium-background), #000 20%);
+  --vimium-border-primary: var(--vimium-background-selected);
+  --vimium-box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
 }
 
 @keyframes show {
@@ -27,13 +27,13 @@
 #vimiumHintMarkerContainer {
   .internalVimiumHintMarker {
     padding: 3px 4px;
-    background: var(--background);
+    background: var(--vimium-background);
     border: none;
-    box-shadow: var(--box-shadow);
+    box-shadow: var(--vimium-box-shadow);
   }
 
   span {
-    color: var(--text);
+    color: var(--vimium-text);
     text-shadow: none;
   }
 
@@ -41,27 +41,27 @@
     opacity: 0.4;
 
     ~ span {
-      color: var(--accent);
+      color: var(--vimium-accent);
     }
   }
 }
 
 #vomnibar {
-  background: var(--background);
+  background: var(--vimium-background);
   border: none;
-  box-shadow: var(--box-shadow);
+  box-shadow: var(--vimium-box-shadow);
   animation: show 200ms cubic-bezier(0, 0, 0.2, 1) forwards;
 
   .vomnibarSearchArea {
     padding: 10px 30px;
-    color: var(--text);
+    color: var(--vimium-text);
     background: transparent;
     border: none;
   }
 
   #vomnibarInput {
     padding: 0;
-    color: var(--text);
+    color: var(--vimium-text);
     background: transparent;
     box-shadow: none;
   }
@@ -70,12 +70,12 @@
     margin: 0;
     padding: 0;
     background: transparent;
-    border-top: 1px solid var(--border-primary);
+    border-top: 1px solid var(--vimium-border-primary);
   }
 
   li {
     padding: 10px;
-    border-bottom: 1px solid var(--border-primary);
+    border-bottom: 1px solid var(--vimium-border-primary);
 
     .vomnibarTopHalf,
     .vomnibarBottomHalf {
@@ -85,36 +85,36 @@
 
     .vomnibarTitle,
     .vomnibarSource {
-      color: var(--text-secondary);
+      color: var(--vimium-text-secondary);
     }
 
     .vomnibarUrl {
       overflow: hidden;
-      color: var(--text-tertiary);
+      color: var(--vimium-text-tertiary);
       white-space: nowrap;
       text-overflow: ellipsis;
     }
 
     .vomnibarMatch {
-      color: var(--accent);
+      color: var(--vimium-accent);
       font-weight: normal;
     }
 
     .vomnibarTitle .vomnibarMatch {
-      color: var(--accent);
+      color: var(--vimium-accent);
     }
 
     &.vomnibarSelected {
-      background-color: var(--background-selected);
+      background-color: var(--vimium-background-selected);
       border-bottom: 1px solid transparent;
     }
   }
 }
 
 div.vimiumHUD {
-  background: var(--background);
+  background: var(--vimium-background);
   border: none;
-  box-shadow: var(--box-shadow);
+  box-shadow: var(--vimium-box-shadow);
 
   .hud-find {
     display: flex;
@@ -123,17 +123,17 @@ div.vimiumHUD {
   span#hud-find-input {
     position: relative;
     width: 100%;
-    color: var(--text);
+    color: var(--vimium-text);
 
     &::before {
       position: sticky;
       left: 0;
       padding-right: 4px;
-      color: var(--text-secondary);
+      color: var(--vimium-text-secondary);
       background: linear-gradient(
         90deg,
-        var(--background) 0%,
-        var(--background) 50%,
+        var(--vimium-background) 0%,
+        var(--vimium-background) 50%,
         transparent 100%
       );
     }
