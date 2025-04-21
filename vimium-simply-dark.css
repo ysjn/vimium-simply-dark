@@ -1,5 +1,7 @@
 :root {
-  .vimiumReset, #vomnibar, .vimiumHUD {
+  .vimiumReset,
+  #vomnibar,
+  .vimiumHUD {
     /** Customizable Palette */
     --accent: hotpink;
     --text: #fff;
@@ -125,7 +127,6 @@ div.vimiumHUD {
   span#hud-find-input {
     position: relative;
     width: 100%;
-    color: var(--text);
 
     &::before {
       position: sticky;
@@ -139,6 +140,11 @@ div.vimiumHUD {
         transparent 100%
       );
     }
+  }
+
+  span#hud-find-input,
+  .vimiumHUDSearchAreaInner {
+    color: var(--text-secondary);
   }
 
   #hud-match-count {
